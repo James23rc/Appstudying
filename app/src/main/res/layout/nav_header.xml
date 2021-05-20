@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/username"
+        android:layout_alignEnd="@+id/mail"
+        android:src="@drawable/title"
+        android:layout_alignRight="@+id/mail" />
+    <TextView
+        android:id="@+id/mail"
+        android:layout_alignParentBottom="true"
+        android:text="1095845028@qq.com"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mail"
+        android:layout_alignParentLeft="true"
+        android:text="物联网小学生"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>

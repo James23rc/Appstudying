@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Activity.WebActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+</LinearLayout>

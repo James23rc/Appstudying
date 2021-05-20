@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.gank.myview.MyScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="34dp"
+                android:layout_marginLeft="34dp"
+                android:layout_marginBottom="147dp"
+                android:src="@drawable/head_test" />
+
+            <TextView
+                android:id="@+id/tv_head_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_head"
+                android:layout_marginStart="27dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginBottom="42dp"
+                android:layout_toEndOf="@+id/iv_head"
+                android:layout_toRightOf="@+id/iv_head"
+                android:text="自动化学院物联网"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/bt_head_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/tv_head_name"
+                android:layout_alignLeft="@+id/tv_head_name"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="147dp"
+                android:text="幼儿园三年级"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_head_position"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignTop="@+id/tv_head_name"
+                android:layout_marginStart="132dp"
+                android:layout_marginLeft="132dp"
+                android:layout_marginTop="-1dp"
+                android:layout_toEndOf="@+id/tv_head_name"
+                android:layout_toRightOf="@+id/tv_head_name"
+                android:src="@drawable/chat_nearby48" />
+
+            <TextView
+                android:id="@+id/tv_head_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_head_position"
+                android:layout_marginStart="132dp"
+                android:layout_marginLeft="132dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/bt_head_grade"
+                android:layout_toRightOf="@+id/bt_head_grade"
+                android:text="南岸区" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/rl_center"
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="86dp"
+            android:layout_marginRight="86dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@color/blue_light_lv10"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_enter_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="74dp"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:text="暂时没有消息"
+                android:textColor="#2EC5FF"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="59dp"
+                android:background="#000000"
+                android:gravity="center" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_set1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="浏览历史"
+            android:textColor="#545454"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/rl_center"
+            app:layout_constraintTop_toBottomOf="@+id/rl_center" />
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#000000"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_set1" />
+
+        <TextView
+            android:id="@+id/tv_set2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="更多设置"
+            android:textColor="#545454"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/rl_center"
+            app:layout_constraintTop_toBottomOf="@+id/ll_4" />
+
+        <LinearLayout
+            android:id="@+id/ll_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#000000"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_set2" />
+
+        <TextView
+            android:id="@+id/tv_set3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="我的收藏"
+            android:textColor="#545454"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/rl_center"
+            app:layout_constraintTop_toBottomOf="@+id/ll_1" />
+
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#000000"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_set3" />
+
+        <TextView
+            android:id="@+id/tv_set4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="夜间模式"
+            android:textColor="#545454"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/rl_center"
+            app:layout_constraintTop_toBottomOf="@+id/ll_2" />
+
+        <LinearLayout
+            android:id="@+id/ll_4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#000000"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_set4" />
+
+        <TextView
+            android:id="@+id/tv_set5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="点击登录"
+            android:textColor="#545454"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/rl_center"
+            app:layout_constraintTop_toBottomOf="@+id/ll_3" />
+
+        <LinearLayout
+            android:id="@+id/ll_5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#000000"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_set5" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/rl_center"
+            app:layout_constraintTop_toBottomOf="@+id/ll_2" />
+
+    </android.support.constraint.ConstraintLayout>
+    </com.example.gank.myview.MyScrollView>
+

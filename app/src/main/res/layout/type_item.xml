@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/item">
+    <ImageView
+        android:id="@+id/scend_item_imageview"
+        android:layout_width="80dp"
+        android:layout_gravity="center"
+        android:layout_height="100dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/scend_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="标题"
+            android:textColor="#5E5E5E"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/scend_item_writer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="作者"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/scend_item_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="时间"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_first"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/red">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/nav_home"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons"/>
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="最新"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:typeface="sans"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+            <ImageView
+                android:id="@+id/image_first"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/icons8_data"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/first_list_view"/>
+    </ScrollView>
+</LinearLayout>

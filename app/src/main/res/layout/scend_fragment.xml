@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_scend"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/red"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="干货分类"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabIndicatorHeight="8dp"
+        app:tabMinWidth="60dp"
+        app:tabPadding="5dp"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabIndicatorColor="#FF335C"
+        app:tabSelectedTextColor="#FF335C"
+        app:tabTextColor="#30A2BE">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
